@@ -1,0 +1,7 @@
+emnist
+keras
+numpy
+sklearn
+pandas
+tensorflow-federated
+nltk
