@@ -1,5 +1,5 @@
-emnist
 keras
+emnist
 numpy
 sklearn
 pandas

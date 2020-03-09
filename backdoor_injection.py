@@ -11,7 +11,6 @@ import tensorflow as tf
 available_gpus = subprocess.check_output('nvidia-smi | grep "0%" -B1 | cut -d" " -f4 | grep -v -e "--" | sed "/^$/d"', shell=True).split(b'\n')[:-1 ]
 assert len(available_gpus) >= 1
 USE_GPU=available_gpus[-1].decode("utf-8")
-#USE_GPU = '1'
 os.environ['CUDA_DEVICE_ORDER']="PCI_BUS_ID"
 os.environ['CUDA_VISIBLE_DEVICES']=USE_GPU
 gpu = tf.config.experimental.list_physical_devices('GPU')

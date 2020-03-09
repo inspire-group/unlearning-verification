@@ -4,11 +4,8 @@
 import os
 import numpy as np
 import gc
-
-
 from sklearn.utils import shuffle
 from sklearn.model_selection import train_test_split
-
 from keras import backend as keras_backend
 
 def clear_memory_from_keras():

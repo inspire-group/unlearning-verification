@@ -5,7 +5,6 @@ import os
 import numpy as np
 import emnist
 from keras.datasets import cifar10
-
 from poisoned_dataset.poisoned_dataset import CACHE_DIR, GenerateSpotsBase, PoisonedDataSet
 
 

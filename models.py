@@ -77,8 +77,6 @@ def get_model_cnn_4_input786_adam_crossentropy():
 
 # Keras Resnet cifar10 https://keras.io/examples/cifar10_resnet/
 
-
-
 def lr_schedule(epoch):
     """Learning Rate Schedule
 

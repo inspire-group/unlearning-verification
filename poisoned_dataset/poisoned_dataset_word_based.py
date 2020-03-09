@@ -13,11 +13,9 @@ import nltk
 from sklearn.utils import shuffle
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
-
 from poisoned_dataset.poisoned_dataset import CACHE_DIR, GenerateSpotsBase, PoisonedDataSet
 
 TOKENIZER_MAX_NUM_WORDS = 70000
-
 INPUT_PAD_LENGTH_AGNews = 150
 
 #####

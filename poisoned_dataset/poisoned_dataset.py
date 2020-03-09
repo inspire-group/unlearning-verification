@@ -6,7 +6,6 @@ import abc
 import numpy as np
 from sklearn.utils import shuffle
 
-
 CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "cache")
 
 
