@@ -1,7 +1,0 @@
-keras
-emnist
-numpy
-sklearn
-pandas
-tensorflow-federated
-nltk
