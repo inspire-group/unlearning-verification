@@ -1,0 +1,9 @@
+emnist
+keras == 2.4.0
+numpy
+sklearn
+pandas
+tensorflow == 2.5.3
+google-cloud-bigquery == 2.20.0
+h5py
+nltk
