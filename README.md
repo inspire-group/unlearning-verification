@@ -6,6 +6,7 @@ This repository contains the relevant code required to reproduce the results in 
 ### Table of Contents
 - [Requirements](#requirements)
 - [Source Code](#source-code)
+	- [Docker Image](#docker-image)
     - [Installing requirements](#installing-requirements)
     - [Running the code](#running)
 - [Citation](#citation)
@@ -26,11 +27,19 @@ All the source code is provided in `src/` and `Makefile` is provided inside.
 * `src/multi_user`: This directory contains scripts analyzing the involvment of collaborating users.
 * `src/plotting_scripts`: This directory contains plotting scripts.
 
+#### Docker Image
+There is a [Dockerfile](Dockerfile) that autmatically downloads and builds all required content and dependencies. To build and run, download the [Dockerfile](Dockerfile) and execute in the downloading directory the following commands with bash:
+```
+$ docker build . -t unlearning-verification
+$ docker run -it unlearning-verification /bin/bash
+```
+Then, continue with the code-running instructions below. 
+
 #### Installing requirements
-Install required packages using the following command (For Ubuntu 21.10): `sudo apt install pkg-config libhdf5-dev` 
+Install required packages using the following command (For Ubuntu 21.10): `sudo apt install pkg-config libhdf5-dev build-essential git python3 python3-venv` 
 
 #### Running the code
-This code runs on `python3`. It requires `python3` and `pip` (with the command "pip" refering to python3, not python2) to be installed. After installing the dependencies, you can run the code with the following comand: `cd src/; make`
+This code runs on `python3`. It requires `python3` and `pip` (with the command "pip" refering to python3, not python2) to be installed. After installing the dependencies (or if docker has done it for you), you can run the code with the following comand: `cd src/; make`
 
 Each sub-director contains a `README` file to provide pointers on the relevant experiments. 
 
